@@ -1,0 +1,20 @@
+<p class="user">{{user.email}}</p>
+<a href="account/changepassword">Change password</a>
+<a id="logout" href="account/logout" class="btn btn-default btn-sm">Logout</a>
+<hr>
+<table class="table">
+	<tr>
+		<td>ID</th> 
+		<td>PaymentID</th> 
+		<td>CreatedAt</th> 
+		<td>State</th> 
+	</tr>
+	{{#each paymentrecords}}
+	<tr>
+			<td>{{this.id}}</td>
+			<td><a href="account/history/{{this.paymentid}}">{{this.paymentid}}</td>
+			<td>{{this.createdAt}}</td>
+			<td>{{this.state}}</td>
+	</tr>
+	{{/each}}
+</table>

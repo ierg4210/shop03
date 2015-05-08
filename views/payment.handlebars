@@ -1,0 +1,27 @@
+<p class="user">{{user.email}}</p>
+<a id="logout" href="../logout" class="btn btn-default btn-sm">Logout</a>
+<hr>
+<ol class="breadcrumb">
+	<li><a href="/account">Account</a></li>
+	<li class="active"><p>{{paymentid}}</p></li>
+</ol>
+<hr>
+<table class="table">
+<tr>
+<td>#</td>
+<td>Name</td>
+<td>Price</td>
+<td>Quantity</td>
+</tr>
+
+{{#each items}}
+<tr>
+<td><img src="/tmp/{{this.image}}" width=100px></td>
+<td>{{this.name}}</td>
+<td>$ {{this.price}}</td>
+<td>{{this.quantity}}</td>
+</tr>
+{{/each}}
+
+</table>
+<hr><p>Total: ${{total}}</p>

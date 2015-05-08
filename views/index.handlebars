@@ -1,0 +1,55 @@
+{{#if user.email}}
+  <div class="account"><a href="/account">{{user.email}}</a></div>
+{{else}}
+  <div class="account"><a href="/account">Log in</a></div>
+{{/if}}
+
+<div id="shopping_cart_div">
+	<button id="shopping_cart" type="btn btn-primary" >Shopping Cart<span id="total_badge" class="badge">$0</span></button>
+</div>
+
+<div class="row">            
+<div class="col-md-3">
+	<nav id="js_nav">
+		<ul id="categorys" class="nav nav-pills nav-stacked" role="tablist">
+			<li class="active"><a>Category List</a></li>
+				<div id="nativator_list"></div>
+				{{#each categories}}
+					<li><a class="category_list" href="/{{this.id}}">{{this.id}}-{{this.categoryName}}</a></li>
+				{{/each}}
+		</ul>
+	</nav>
+</div>
+
+<div class="col-md-9" >
+<section>
+<div class="breadcrumb">
+	<li><a id="home" href="../">Home</a><span class="divider"></span></li>
+	<li><a id="category_name">{{category.categoryName}}</a><span class="divider"></span></li>
+	<li><a id="product_name"></a><span class="divider"></span></li>
+<div>
+            
+<div id = "product_list" class="thumbnails">
+	{{#each category.Products}}
+		<li class="span">
+			<div id="product" class="thumbnail" 
+				category_id="{{this.CategoryId}}"
+				book_id="{{id}}">
+			<a href="./{{this.CategoryId}}/{{this.id}}"><img class="book_img" src="/tmp/{{productImage}}" ></img></a>
+			<div class="name" >{{productName}}</div>
+			<div class="price">$ {{productPrice}}</div>
+			<button id="add" class="btn btn-primary btn-large" 
+				category_id="{{this.CategoryId}}" 
+				book_id="{{this.id}}">Add</button>
+			</div>
+	</li>
+{{/each}}
+</div>
+</section>
+</div>
+</div>
+
+
+
+
+

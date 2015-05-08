@@ -1,0 +1,21 @@
+body{
+
+}
+ul {
+	padding: 2em;
+
+}
+li {
+	border: 2px solid navy;
+	padding: 2px;
+	margin: 2px;
+}
+form {
+	text-align: left;
+}
+img {
+	
+}
+#logout{
+
+}

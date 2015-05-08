@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Change Password</title>
+	<link ref="stylesheet" href="/css/bootstrap.min.css">
+	<link rel="stylesheet" href="/css/font-awesome.min.css">
+
+</head>
+<body>
+<div class="container">
+
+	<div class="col-sm-6 col-sm-offset-3">
+		<h1><span class="fa fa-sign-in"></span> Change Password</h1>
+		
+		{{#if message.length}}
+			<div class="alert alert-danger">{{message}}</div>
+		{{/if }}
+
+		<form action="" method="post">
+			<input type="hidden" name="_csrf" value="{{csrfToken}}">
+			<div class="form-group">
+				<label>Current Password</label>
+				<input type="password" class="form-control" name="currentpassword" required>
+			</div>
+			<div class="form-group">
+				<label>New Password</label>
+				<input type="password" class="form-control" name="newpassword" required>
+			</div>
+			<div class="form-group">
+				<label>Confirm Password</label>
+				<input type="password" class="form-control" name="newpasswordagain" required>
+			</div>
+			<button type="submit" class="btn btn-default">Save</button>
+		</form>
+		<hr>
+
+</div>
+</div>
+</body>

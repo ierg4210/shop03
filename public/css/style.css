@@ -1,0 +1,178 @@
+body {
+    font-family: Verdana, sans-serif;
+    margin: auto; 
+    width: 100%;
+    text-align: center;
+}
+h1 {
+
+}
+.jumbotron { 
+  padding: 1px; 
+}
+
+p {
+  display: inline;
+  margin: 3px;
+}
+#quantity{
+  border-radius:5px;
+  width: 40px;
+}
+#shopping_cart_div {
+  width: 100%;
+  height: 40px;
+}
+#shopping_cart {
+    float: right;
+    width: auto;
+    margin: 1px;
+    padding: 1px;
+    text-align: right;
+}
+.badge {
+  margin: 3px;
+}
+nav {
+    width: 100%;
+    margin: 1px 1px;
+    text-align: left;
+    float: left;
+}
+nav p {
+    margin: 3px;
+    padding: 4px;
+    color: brown;
+}
+nav .category_list:hover{
+    color:brown;
+}
+
+section {
+    float: right;
+    width: 100%;
+    float: left;
+}
+
+section .breadcrumb{
+  text-align: left;
+  clear: both;
+}
+
+#product_list
+  {
+  width:100%;
+  margin:12px 0px;
+  height:auto;
+  float:left;
+  }
+#product_list .thumbnail
+  {
+  width:180px;
+  height:290px;
+  padding: 5px;
+  margin: 8px;
+  display: inline;
+  float:left;
+  text-align:center;
+  }
+#product_list img
+  {
+  display:inline;
+  margin:3px;
+  width: 120px;
+  height: 160px;
+  }
+#product_list a:hover img
+  {
+  border:1px solid #333333;
+  }
+#product_list #product .name
+  {
+  text-align:center;
+  font-weight:bold;
+  width:100%;
+  font-size:0.55em;
+  min-height: 40px;
+  }
+#product_list #product .price
+  {
+  text-align:center;
+  font-weight:normal;
+  width:100%;
+  font-size:12px;
+  padding: 5px 0px;
+  }
+#product_list #add {
+  margin: 5px;
+  width: 100px;
+}
+
+#product_list #product_detail
+{
+    text-align: center;
+}
+#product_list #product_detail img
+{
+    border: solid 1px gray;
+    width: 27%;
+    height: auto;
+    margin: 20px 5px;
+    float:left;
+}
+#product_list #product_detail #name
+{
+  font-size: 1.7em;
+  color: black;
+  margin: 20px 2px;
+}
+#product_list #product_detail #author
+{
+    color: #151517;
+    font-weight:normal;
+    width:100%;
+    font-size:1em;
+    float: left; 
+    margin: 20px 5px;
+    text-align: left;
+}
+#product_list #product_detail #price{
+    width: auto;
+    font-size: 1.2em;
+}
+#product_list #product_detail #desc
+{
+    color: gray;
+    font-weight:normal;
+    width:auto;
+    margin: 20px 5px;
+    font-size:0.8em;
+    float: left;
+    text-align: left;
+}
+#product_list #product_detail #add
+{
+    width: 80px;
+}
+
+footer {
+  padding-top: 130px;
+  text-align: center;
+}
+footer p{
+  margin-bottom: 0em;
+  padding: 20px;
+}
+.popover {
+  max-width: 50%;
+}
+ul{
+  text-align: left;
+}
+ol.breadcrumb{
+  text-align: left;
+  clear: both;
+}
+div.account{
+  text-align: right;
+}

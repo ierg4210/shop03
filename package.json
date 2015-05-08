@@ -1,0 +1,49 @@
+{
+  "name": "shop03",
+  "description": "ierg4210_shop03",
+  "version": "0.0.1",
+  "scripts": {
+    "start": "node ./bin/www"
+  },
+  "dependencies": {
+    "async": "^0.9.0",
+    "bcrypt-nodejs": "0.0.3",
+    "body-parser": "^1.12.0",
+    "connect-flash": "^0.1.1",
+    "cookie-parser": "^1.3.4",
+    "csurf": "^1.7.0",
+    "emailjs": "^0.3.13",
+    "eventproxy": "^0.3.2",
+    "express": "4.x",
+    "express-handlebars": "^1.2.2",
+    "express-secure-handlebars": "^1.0.4",
+    "express-session": "^1.10.3",
+    "fs": "0.0.2",
+    "morgan": "^1.5.1",
+    "multer": "^0.1.8",
+    "mysql": "^2.5.4",
+    "passport": "^0.2.1",
+    "passport-facebook": "^2.0.0",
+    "passport-local": "^1.0.0",
+    "path": "^0.11.14",
+    "paypal-rest-sdk": "^1.5.2",
+    "sequelize": "^2.0.0-rc1",
+    "sequelize-cli": "^1.3.0",
+    "serve-favicon": "^2.2.0"
+  },
+  "main": "shop.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ierg4210/shop03.git"
+  },
+  "keywords": [
+    "ierg4210",
+    "shop03"
+  ],
+  "author": "liquanquan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ierg4210/shop03/issues"
+  },
+  "homepage": "https://github.com/ierg4210/shop03"
+}
